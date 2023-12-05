@@ -19,7 +19,6 @@ def generate_primes(n: int) -> list[int]:
     isPrime[1] = False
 
     for i in range(2, sqrt(n)):
-
         if isPrime[i]:
             j = i * i
             while j <= n:
@@ -34,22 +33,22 @@ def generate_primes(n: int) -> list[int]:
 
 
 def isWinner(x: int, nums: list[int]):
-    score_board = {'miriam': 0, 'ben': 0}
+    score_board = {"miriam": 0, "ben": 0}
     if x > len(nums):
         return None
 
     for i in range(x):
         primes = generate_primes(nums[i])
         if len(primes) == 0:
-            score_board['ben'] = score_board['ben'] + 1
+            score_board["ben"] = score_board["ben"] + 1
         elif len(primes) % 2 == 0:
-            score_board['ben'] = score_board['ben'] + 1
+            score_board["ben"] = score_board["ben"] + 1
         else:
-            score_board['miriam'] = score_board['miriam'] + 1
-    if score_board['ben'] > score_board['miriam']:
-        return 'Ben'
-    if score_board['miriam'] > score_board['ben']:
-        return 'Miriam'
+            score_board["miriam"] = score_board["miriam"] + 1
+    if score_board["ben"] > score_board["miriam"]:
+        return "Ben"
+    if score_board["miriam"] > score_board["ben"]:
+        return "Miriam"
     return None
 
 
