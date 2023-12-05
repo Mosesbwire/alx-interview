@@ -37,9 +37,8 @@ def isWinner(x: int, nums: list[int]):
     score_board = {"miriam": 0, "ben": 0}
     if x > len(nums):
         return None
-
+    primes = generate_primes(max(nums))
     for i in range(x):
-        primes = generate_primes(nums[i])
         if len(primes) == 0:
             score_board["ben"] = score_board["ben"] + 1
         elif len(primes) % 2 == 0:
