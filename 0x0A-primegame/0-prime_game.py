@@ -33,6 +33,7 @@ def generate_primes(n: int) -> list[int]:
 
 
 def isWinner(x: int, nums: list[int]):
+    """ return winner after x number of rounds played """
     score_board = {"miriam": 0, "ben": 0}
     if x > len(nums):
         return None
@@ -50,6 +51,3 @@ def isWinner(x: int, nums: list[int]):
     if score_board["miriam"] > score_board["ben"]:
         return "Miriam"
     return None
-
-
-print(isWinner(5, [1, 2, 3, 4, 5]))
