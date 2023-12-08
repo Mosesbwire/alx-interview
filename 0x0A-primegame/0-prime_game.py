@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-module: 0-prime_game
-
+Module 0-prime_game
+Algorithm generates primes numbers and select winner based on number of rounds played and number of primes
 """
 
 
