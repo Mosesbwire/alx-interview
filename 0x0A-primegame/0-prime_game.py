@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""module: 0-prime_game
+"""
+module: 0-prime_game
 
 """
 
