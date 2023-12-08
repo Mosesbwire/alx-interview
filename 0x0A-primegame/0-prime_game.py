@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" module: 0-prime_game """
+# 0-prime_game
+
+""" Interview prep """
 
 
 def sqrt(n):
