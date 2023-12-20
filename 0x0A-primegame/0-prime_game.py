@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''0-prime_game'''
+'''0-prime_game
+    Alx-DSA interview question challenges
+'''
 
 
 def sqrt(n):
